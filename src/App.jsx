@@ -1,19 +1,31 @@
 
 import './App.css'
+import logo from './assets/logo.png'
+import coin from './assets/Currency.png'
 
 function App() {
   
 
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
-          <div className="flex-1">
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+      <div className="navbar max-w-[1200px] mx-auto flex items-center justify-between">
+          <div className="flex items-center">
+            <img src={logo} alt="" className='w-13 h-13'/>
           </div>
-          <div className="flex-none">
-            <button className="btn btn-square btn-ghost">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-5 w-5 stroke-current"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> </svg>
-            </button>
+          <div className="flex items-center gap-10">
+            <div className='flex items-center '>
+              <ul className='flex items-center gap-5'>
+                <li>Home</li>
+                <li>Fixtures</li>
+                <li>Teams</li>
+                <li>Schedules</li>
+              </ul>
+            </div>
+            <div className='flex items-center gap-1 cursor-pointer'>
+               <span>600000000</span>
+              <span>Coin</span>
+              <img src={coin} alt="" className='w-5 h-5' />
+            </div>
           </div>
       </div>
     </>

@@ -1,0 +1,110 @@
+[
+  {
+    "img": "https://i.ibb.co.com/nqsZrz0W/Virat-Kohli-in-PMO-New-Delhi.jpg",
+    "name": "Virat Kohli",
+    "country": "India",
+    "type": "Batsman",
+    "rating": 94,
+    "batStyle": "Right-handed bat",
+    "price": 1500000
+  },
+  {
+    "img": "https://i.ibb.co.com/jvmMKvT3/63649e547aae4.jpg",
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "type": "Batsman",
+    "rating": 91,
+    "batStyle": "Right-handed bat",
+    "price": 1250000
+  },
+  {
+    "img": "https://i.ibb.co.com/7d4H2HFS/t123hrig-steve-smith-650x400-05-March-25.webp",
+    "name": "Steve Smith",
+    "country": "Australia",
+    "type": "Batsman",
+    "rating": 92,
+    "batStyle": "Right-handed bat",
+    "price": 1300000
+  },
+  {
+    "img": "https://i.ibb.co.com/XZx27mkN/197-camedia.png",
+    "name": "Jos Buttler",
+    "country": "England",
+    "type": "Batsman",
+    "rating": 89,
+    "batStyle": "Right-handed bat",
+    "price": 1100000
+  },
+  {
+    "img": "https://i.ibb.co.com/mr76J936/66833.webp",
+    "name": "Shaheen Afridi",
+    "country": "Pakistan",
+    "type": "Bowler",
+    "rating": 88,
+    "batStyle": "Left-handed bat",
+    "price": 950000
+  },
+  {
+    "img": "https://i.ibb.co.com/tP1k6r3V/272-camedia.png",
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "type": "Bowler",
+    "rating": 90,
+    "batStyle": "Right-handed bat",
+    "price": 1200000
+  },
+  {
+    "img": "https://i.ibb.co.com/fYnTMx8r/2c31015d1d3df874992d5f90c4d9c1ab.jpg",
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "type": "Allrounder",
+    "rating": 92,
+    "batStyle": "Left-handed bat",
+    "price": 1350000
+  },
+  {
+    "img": "https://i.ibb.co.com/Gf67RzvL/images-1.jpg",
+    "name": "Ben Stokes",
+    "country": "England",
+    "type": "Allrounder",
+    "rating": 91,
+    "batStyle": "Left-handed bat",
+    "price": 1400000
+  },
+  {
+    "img": "https://i.ibb.co.com/v6VxpCXn/images.jpg",
+    "name": "Ravindra Jadeja",
+    "country": "India",
+    "type": "Allrounder",
+    "rating": 89,
+    "batStyle": "Left-handed bat",
+    "price": 1200000
+  },
+  {
+    "img": "https://i.ibb.co.com/5X50bYZd/Jasprit-Bumrah-in-PMO-New-Delhi-jpg.webp",
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "type": "Bowler",
+    "rating": 93,
+    "batStyle": "Right-handed bat",
+    "price": 1450000
+  },
+  {
+    "img": "https://i.ibb.co.com/gMd9jrzq/warner-player-of-the-tournamen-0-1200x768-1-1.webp",
+    "name": "David Warner",
+    "country": "Australia",
+    "type": "Batsman",
+    "rating": 88,
+    "batStyle": "Left-handed bat",
+    "price": 1250000
+  },
+  {
+    "img": "https://i.ibb.co.com/v4DKHyKR/2018-02-03-22-23-14-AUSv-NZL-T20-AUS-innings-SCG-39533156665.jpg",
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "type": "Bowler",
+    "rating": 87,
+    "batStyle": "Right-handed bat",
+    "price": 1000000
+  }
+]
