@@ -1,33 +1,17 @@
-
-import './App.css'
-import logo from './assets/logo.png'
-import coin from './assets/Currency.png'
+// import './App.css'
+import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers'
+import SelectedPlayers from './Components/SelectedPlayers/SelectedPlayers'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
   
 
   return (
     <>
-      <div className="navbar max-w-[1200px] mx-auto flex items-center justify-between">
-          <div className="flex items-center">
-            <img src={logo} alt="" className='w-13 h-13'/>
-          </div>
-          <div className="flex items-center gap-10">
-            <div className='flex items-center '>
-              <ul className='flex items-center gap-5'>
-                <li>Home</li>
-                <li>Fixtures</li>
-                <li>Teams</li>
-                <li>Schedules</li>
-              </ul>
-            </div>
-            <div className='flex items-center gap-1 cursor-pointer'>
-               <span>600000000</span>
-              <span>Coin</span>
-              <img src={coin} alt="" className='w-5 h-5' />
-            </div>
-          </div>
-      </div>
+      
+      <Navbar></Navbar>
+      <AvailablePlayers></AvailablePlayers>
+      <SelectedPlayers></SelectedPlayers>
     </>
   )
 }
