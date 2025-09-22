@@ -11,7 +11,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-10">
             <div className='flex items-center '>
-              <ul className='hidden md:flex md:items-center md:gap-5'>
+              <ul className='hidden md:flex md:items-center md:gap-6 '>
                 <li>Home</li>
                 <li>Fixtures</li>
                 <li>Teams</li>
