@@ -10,7 +10,7 @@ const fetchPlayers = async ()=>{
 }
 
 function App() {
-  const [toggle , setToggle] =useState(false)
+  const [toggle , setToggle] = useState(true)
   const playersPromise = fetchPlayers()
   return (
     <>
