@@ -15,6 +15,13 @@ function App() {
   const [availableBalance,setAvailableBalance]=useState(6000000)
   const [purchasedPlayer , setPurchasedPlayer] = useState([])
   // console.log(purchasedPlayer)
+
+  const removePlayer = (p)=>{
+    const filteredData = purchasedPlayer.filter(player=>player.name!==p.name)
+    setPurchasedPlayer(filteredData)
+    setAvailableBalance(availableBalance+p.price)
+  }
+
   return (
     <>
       
@@ -30,7 +37,7 @@ function App() {
         {
           toggle === true ? <Suspense fallback={<h3 className='font-bold max-w-[1200px] mx-auto'>Players are Loading <span className="loading loading-dots loading-xl"></span></h3>}>
            <AvailablePlayers purchasedPlayer={purchasedPlayer} setPurchasedPlayer={setPurchasedPlayer} availableBalance={availableBalance} playersPromise={playersPromise} setAvailableBalance={setAvailableBalance}></AvailablePlayers>
-          </Suspense> : <SelectedPlayers purchasedPlayer={purchasedPlayer}></SelectedPlayers>
+          </Suspense> : <SelectedPlayers removePlayer={removePlayer} purchasedPlayer={purchasedPlayer}></SelectedPlayers>
         }
       
       
