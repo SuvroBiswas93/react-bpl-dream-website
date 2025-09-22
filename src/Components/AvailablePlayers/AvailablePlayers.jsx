@@ -6,8 +6,7 @@ const AvailablePlayers = ({playersPromise}) => {
     const players = use(playersPromise)
     console.log(players)
     return (
-        <>
-        <h1 className='font-extrabold text-2xl max-w-[1200px] mx-auto mt-2 md:mt-4'>Available Players : </h1>
+       
         <div className='max-w-[1200px] mx-auto mt-6 grid grid-cols-1 md:grid-cols-3 gap-5'>
             
             {
@@ -56,7 +55,7 @@ const AvailablePlayers = ({playersPromise}) => {
              
             
         </div>
-        </>
+        
     );
 };
 
