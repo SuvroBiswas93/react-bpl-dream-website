@@ -13,23 +13,24 @@ const fetchPlayers = async ()=>{
 function App() {
   const [toggle , setToggle] = useState(true)
   const [availableBalance,setAvailableBalance]=useState(6000000)
- 
+  const [purchasedPlayer , setPurchasedPlayer] = useState([])
+  // console.log(purchasedPlayer)
   return (
     <>
       
       <Navbar availableBalance={availableBalance}></Navbar>
         <div className='flex flex-col md:flex-row md:justify-between items-center mt-4 max-w-[1200px] mx-auto '>
-          <h1 className='font-bold text-2xl '>Available Players</h1>
+          <h1 className='font-bold text-2xl '>{toggle ? 'Available Balance' : `Selected Player(${purchasedPlayer.length}/6)`}</h1>
           <div className='font-bold mt-2'>
             <button onClick={()=> setToggle(true)} className={`py-2 px-4 border-r-0 border-1 border-gray-400 rounded-l-2xl cursor-pointer ${toggle === true ? "bg-[#E7FE29]":""}`}>Available</button>
-            <button onClick={()=> setToggle(false)} className={`py-2 px-4 border-l-0 border-1 border-gray-400 rounded-r-2xl cursor-pointer ${toggle === false ? "bg-[#E7FE29]":""}`}>Selected<span>(0)</span></button>
+            <button onClick={()=> setToggle(false)} className={`py-2 px-4 border-l-0 border-1 border-gray-400 rounded-r-2xl cursor-pointer ${toggle === false ? "bg-[#E7FE29]":""}`}>Selected<span>({purchasedPlayer.length})</span></button>
           </div>
         </div>
 
         {
           toggle === true ? <Suspense fallback={<h3 className='font-bold max-w-[1200px] mx-auto'>Players are Loading <span className="loading loading-dots loading-xl"></span></h3>}>
-           <AvailablePlayers availableBalance={availableBalance} playersPromise={playersPromise} setAvailableBalance={setAvailableBalance}></AvailablePlayers>
-          </Suspense> : <SelectedPlayers></SelectedPlayers>
+           <AvailablePlayers purchasedPlayer={purchasedPlayer} setPurchasedPlayer={setPurchasedPlayer} availableBalance={availableBalance} playersPromise={playersPromise} setAvailableBalance={setAvailableBalance}></AvailablePlayers>
+          </Suspense> : <SelectedPlayers purchasedPlayer={purchasedPlayer}></SelectedPlayers>
         }
       
       
