@@ -8,6 +8,7 @@ const PlayerCard = ({player, setAvailableBalance, availableBalance,purchasedPlay
     const [isSelected, setIsSelected]= useState(false)
 
     const handleSelectedCard = ()=>{
+        
         const playerPrice = parseInt(player.price)
         if(availableBalance < playerPrice){
            toast('Not Enough Coins!!!')
